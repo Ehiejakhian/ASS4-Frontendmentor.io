@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- TitleIcon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    
+    <!--FIGTREE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Blog preview card</title>
+    
+    <style>
+      /*GENERAL*/
+      * {
+        font-family: "Figtree",sans-serif;
+        line-height: 1.5em;
+      }
+      body {
+        background: hsl(47, 88%, 63%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      div.content {
+        background: hsl(0, 0%, 100%);
+        border: 1px solid black;
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 10px 10px rgb(0,0,0);
+        border-radius: 20px;
+        max-width: 350px;
+      }
+      
+      /*CONTENT*/
+      img.mainImage {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      span.learning {
+        background: hsl(47, 88%, 63%);
+        font-weight: 800;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      p#publishDate {
+        color: hsl(0, 0%, 7%);
+      }
+      h2:active, h2:hover{
+        color: hsl(47, 88%, 63%);
+      }
+      p.normal {
+        color: hsl(0, 0%, 42%);
+      }
+      div.writer {
+        font-weight: 800;
+        display: flex;
+        align-items: flex-start;
+      }
+      div.writer img {
+        width: 32px;
+        height: 32px;
+      }
+      .writerName {
+        padding-left: 10px;
+        align-self: center;
+      }
+      /*FOOTER*/
+      footer {
+      
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="content">
+      <div class="image">
+        <img src="illustration-article.svg" alt="mainimage" class="mainImage">
+      </div>
+      <span class="learning">Learning</span>
+
+      <p id="publishDate">Published 21 Dec 2023</p>
+
+      <h2>HTML & CSS foundations</h2>
+      <p class="normal">
+        These languages are the backbone of every website, defining structure, content, and presentation.
+      </p>
+      <div class="writer">
+        <img src="image-avatar.webp" class="lastImage"><span class="writerName">Greg Hooper</span>
+      </div>
+    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Ehi Ejakhian</a>.
+      </div>
+    </footer>
+</body>
+</html>
